@@ -38,27 +38,6 @@ import { prepareDistFolder, BASE_PATH, getSpecs } from '../helpers.js';
     }
   }
 
-  for (const [id, spec] of getSpecs('vd-patterns')) {
-    db.trackers[id] = {
-      name: spec.field('name').requiredStringValue(),
-      category: spec.field('category').requiredStringValue(),
-      vendor_id: spec.field('organization').optionalStringValue(),
-      alias: 'vd-overwrite ',
-      website_url: spec.field('website_url').optionalStringValue(),
-      domains: [],
-    };
-
-    const domains = spec.field('domains').optionalStringValue();
-    if (domains) {
-      for (const line of domains.split(/[\r\n]+/g)) {
-        const trimmed = line.trim();
-        if (trimmed) {
-          db.trackers[id].domains.push(trimmed);
-        }
-      }
-    }
-  }
-
   console.log('Exported trackers:', Object.keys(db.trackers).length);
 
   writeFileSync(outputPath, JSON.stringify(db, null, 2));
