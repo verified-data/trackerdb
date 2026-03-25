@@ -1,5 +1,6 @@
 name: Google Recaptcha
 category: utilities
+tags: anti-fraud
 website_url: https://www.google.com/recaptcha/about/
 organization: google
 
@@ -8,7 +9,7 @@ recaptcha.net
 --- domains
 
 --- filters
-||google.com/recaptcha/$frame,script
+||google.com/recaptcha/
 ||gstatic.*/recaptcha/
 ||google.com/js/bg/^$script
 ||google.com/js/th/^$script
