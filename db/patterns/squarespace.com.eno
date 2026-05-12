@@ -6,10 +6,9 @@ organization: squarespace
 --- domains
 squarespace.com
 definitions.sqspcdn.com
+squarespace-cdn.com
 --- domains
 
 --- filters
 ||squarespace.com^$3p
 --- filters
-
-ghostery_id: 3869

@@ -1,6 +1,6 @@
 {
   "name": "@ghostery/trackerdb",
-  "version": "1.0.778",
+  "version": "1.0.808",
   "description": "Ghostery Tracker Database",
   "type": "module",
   "scripts": {
@@ -8,6 +8,7 @@
     "test": "node test/index.js",
     "lint": "eslint --ext .js,.ts .",
     "lint-fix": "eslint --fix --ext .js,.ts .",
+    "lint-patterns": "node lint.js --check",
     "update-docs": "node scripts/update-docs.js",
     "export": "npm run export-json && npm run export-engine && npm run export-sql && npm run export-txt",
     "export-sql": "node scripts/export-sql/index.js",

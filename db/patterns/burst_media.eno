@@ -1,7 +1,7 @@
 name: Burst Media
 category: advertising
 website_url: http://www.burstmedia.com/
-organization: rhythmone
+organization: nexxen
 
 --- domains
 burstbeacon.com
@@ -12,5 +12,3 @@ burstnet.com
 ||burstbeacon.com^$3p
 ||burstnet.com^$3p
 --- filters
-
-ghostery_id: 143

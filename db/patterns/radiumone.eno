@@ -1,7 +1,7 @@
 name: RadiumOne
 category: advertising
 website_url: http://www.radiumone.com/index.html
-organization: rythmone
+organization: nexxen
 
 --- domains
 gwallet.com
@@ -11,5 +11,3 @@ r1-cdn.net
 --- filters
 ||gwallet.com^$3p
 --- filters
-
-ghostery_id: 492
