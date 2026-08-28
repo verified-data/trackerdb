@@ -1,0 +1,8 @@
+name: Coralogix RUM
+category: site_analytics
+website_url: https://coralogix.com/platform/rum/
+organization: coralogix
+
+--- domains
+rum-ingress-coralogix.com
+--- domains
